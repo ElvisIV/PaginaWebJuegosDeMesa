@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Sebitas Toys | Tienda de Figuras Anime & Juegos de Mesa en Bolivia</title>
+  <meta name="description" content="Sebitas Toys Bolivia - Tu tienda especializada en figuras de anime originales importadas de Japón (One Piece, Dragon Ball, Demon Slayer, Jujutsu Kaisen) y los mejores juegos de mesa (Catan, Carcassonne, Dixit). Envíos a toda Bolivia.">
+  <meta name="keywords" content="figuras anime Bolivia, juegos de mesa La Paz, Sebitas Toys, One Piece Bolivia, Funko Pop, Nendoroid, Catan Bolivia, figuras originales Japón, cartas TCG">
+  <meta name="author" content="Sebitas Toys Bolivia">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:title" content="Sebitas Toys | Figuras Anime & Juegos de Mesa Bolivia">
+  <meta property="og:description" content="Figuras 100% originales importadas de Japón y los juegos de mesa más populares. Envíos a toda Bolivia.">
+  <meta property="og:image" content="img/hero-banner.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <!-- Google Fonts: Montserrat + Rajdhani + Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <address class="top-info">
+        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> La Paz - Bolivia (Envíos a Todo el País)</span>
+        <span><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/59178776168" target="_blank" rel="noopener">+591 78776168</a></span>
+        <span class="top-badge-alert"><i class="fas fa-fire"></i> ¡Nuevas figuras de Japón en Stock!</span>
+      </address>
+      <div class="top-actions">
+        <div class="top-social">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook Sebitas Toys"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok Sebitas Toys"><i class="fab fa-tiktok"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Sebitas Toys"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER & NAV ================= -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Sebitas Toys Inicio">
+        <img src="img/logo.png" alt="Sebitas Toys Anime Shop" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="brand-fallback" style="display:none;">
+          SEBITAS <span>TOYS</span>
+          <small>ANIME SHOP & BOARD GAMES</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Inicio</a>
+        <a href="anime.html" class="nav-link"><i class="fas fa-torii-gate"></i> Figuras & Anime <span class="nav-badge">HOT</span></a>
+        <a href="juegos.html" class="nav-link"><i class="fas fa-dice"></i> Juegos de Mesa</a>
+        <a href="preventas.html" class="nav-link"><i class="fas fa-clock"></i> Preventas</a>
+        <a href="#contacto" class="nav-link"><i class="fas fa-phone-alt"></i> Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/59178776168" target="_blank" rel="noopener" class="btn-header-wa" aria-label="Escribir por WhatsApp">
+          <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+        </a>
+        <button class="cart-btn cart-toggle-btn" id="cartToggle" aria-label="Abrir carrito de compras">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+          <span class="cart-count cart-count-badge" style="display: none;">0</span>
+        </button>
+        <button class="menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú móvil">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Menú Móvil">
+    <div class="mobile-nav-header">
+      <img src="img/logo.png" alt="Sebitas Toys Logo" style="height: 44px;">
+      <button class="cart-close-btn" id="mobileNavClose" aria-label="Cerrar menú"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="anime.html"><i class="fas fa-torii-gate"></i> Figuras Anime & Escalas</a>
+      <a href="juegos.html"><i class="fas fa-dice"></i> Juegos de Mesa</a>
+      <a href="preventas.html"><i class="fas fa-clock"></i> Preventas de Japón</a>
+      <a href="#contacto"><i class="fas fa-map-marker-alt"></i> Contacto y Envíos</a>
+    </nav>
+  </aside>
+
+  <!-- ================= HERO SHOWCASE ================= -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-banner-wrapper">
+        <img src="img/hero-banner.jpg" alt="Sebitas Toys - Anime Figures & Board Games" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fas fa-shield-alt"></i> Figuras 100% Originales de Japón & USA</span>
+          <h1 class="hero-title">
+            TU TIENDA DE <span class="highlight-red">ANIME</span> & <span class="highlight-yellow">JUEGOS DE MESA</span>
+          </h1>
+          <p class="hero-description">
+            Encuentra las mejores figuras a escala, Nendoroids de colección, cartas TCG y los juegos de mesa más premiados del mundo. Envíos garantizados a toda Bolivia.
+          </p>
+          <div class="hero-actions">
+            <a href="anime.html" class="btn-primary">
+              <i class="fas fa-dragon"></i> Ver Colección Anime
+            </a>
+            <a href="juegos.html" class="btn-secondary">
+              <i class="fas fa-dice-d20"></i> Juegos de Mesa
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fas fa-certificate"></i></div>
+          <div class="trust-text">
+            <h4>100% Originales</h4>
+            <p>Marcas oficiales Bandai, Good Smile, Devir</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fas fa-truck-fast"></i></div>
+          <div class="trust-text">
+            <h4>Envíos a Toda Bolivia</h4>
+            <p>La Paz, Cbba, Santa Cruz y todas las ciudades</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="trust-text">
+            <h4>Compra Segura</h4>
+            <p>Pagos por QR simple y transferencia bancaria</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="trust-text">
+            <h4>Atención Inmediata</h4>
+            <p>Asesoría personalizada y pedidos por WhatsApp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED HIGHLIGHTS ================= -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="featured-split-grid">
+        <!-- Anime Highlight Box -->
+        <div class="featured-box anime-special">
+          <div>
+            <span class="featured-tag"><i class="fas fa-fire"></i> ZONA ANIME & FIGURAS</span>
+            <h3>Coleccionables Japoneses a Escala & Nendoroids</h3>
+            <p>One Piece Gear 5, Satoru Gojo con dominio astral, Goku Ultrainstinto, Demon Slayer y más con pedestal y accesorios de lujo.</p>
+          </div>
+          <a href="anime.html" class="btn-feat"><i class="fas fa-arrow-right"></i> Explorar Catálogo Anime</a>
+        </div>
+
+        <!-- Board Game Highlight Box -->
+        <div class="featured-box boardgame-special">
+          <div>
+            <span class="featured-tag"><i class="fas fa-chess-knight"></i> ZONA LUDOTECA & MESA</span>
+            <h3>Juegos de Mesa para Amigos y Familia</h3>
+            <p>Estrategia, cartas, roles ocultos y party games en español: Catan, Carcassonne, Dixit, 7 Wonders Duel y protectores de cartas.</p>
+          </div>
+          <a href="juegos.html" class="btn-feat"><i class="fas fa-arrow-right"></i> Ver Juegos de Mesa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAIN CATALOG SECTION ================= -->
+  <main class="catalog-section" id="catalogo">
+    <div class="container">
+      
+      <!-- Section Title -->
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-gem"></i> Catálogo Completo</span>
+        <h2 class="section-title">NUESTROS <span>PRODUCTOS</span></h2>
+        <p class="section-subtitle">
+          Explora nuestra selección exclusiva de figuras anime, juegos de mesa y accesorios originales listos para entrega inmediata.
+        </p>
+      </div>
+
+      <!-- Main Category Filter Tabs -->
+      <div class="category-tabs-nav" role="tablist" aria-label="Categorías principales">
+        <button class="main-cat-btn active" data-category="all">
+          <i class="fas fa-th-large"></i> Todos los Productos
+        </button>
+        <button class="main-cat-btn" data-category="anime">
+          <i class="fas fa-torii-gate"></i> Figuras & Anime
+        </button>
+        <button class="main-cat-btn" data-category="juegos">
+          <i class="fas fa-dice"></i> Juegos de Mesa
+        </button>
+        <button class="main-cat-btn" data-category="accesorios">
+          <i class="fas fa-shield-alt"></i> Accesorios & TCG
+        </button>
+        <button class="main-cat-btn" data-category="preventas">
+          <i class="fas fa-clock"></i> Preventas
+        </button>
+      </div>
+
+      <!-- Subcategory / Franchise Pills Bar -->
+      <div class="subcategories-bar" id="subcategoriesBar" aria-label="Filtro de franquicias y géneros"></div>
+
+      <!-- Search & Sort Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <i class="fas fa-search search-icon" aria-hidden="true"></i>
+          <input type="text" id="productSearch" class="search-input" placeholder="Buscar por nombre, anime, juego o franquicia..." aria-label="Buscar producto">
+          <button type="button" id="clearSearch" class="clear-search-btn" aria-label="Borrar búsqueda"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="sort-wrapper">
+          <label for="productSort"><i class="fas fa-sort-amount-down"></i> Ordenar:</label>
+          <select id="productSort" class="sort-select" aria-label="Ordenar productos">
+            <option value="relevance">Relevancia / Destacados</option>
+            <option value="price-asc">Precio: Menor a Mayor</option>
+            <option value="price-desc">Precio: Mayor a Menor</option>
+            <option value="newest">Novedades Primero</option>
+            <option value="name-asc">Nombre: A - Z</option>
+            <option value="name-desc">Nombre: Z - A</option>
+          </select>
+        </div>
+
+        <div class="catalog-stats" id="catalogStats">
+          Mostrando <strong>...</strong> productos
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- No Results State -->
+      <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-search-minus" aria-hidden="true"></i>
+        <h3>No encontramos productos con ese criterio</h3>
+        <p>Intenta buscar por otro término o selecciona otra categoría.</p>
+        <button class="btn-primary" onclick="document.getElementById('productSearch').value=''; document.querySelector('.main-cat-btn[data-category=\'all\']').click();">
+          Ver todos los productos
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-question-circle"></i> Dudas Frecuentes</span>
+        <h2 class="section-title">PREGUNTAS <span>FRECUENTES</span></h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h4><i class="fas fa-box"></i> ¿Las figuras y juegos son originales?</h4>
+          <p>Sí, en Sebitas Toys trabajamos únicamente con productos 100% originales importados directamente de Japón, Estados Unidos y distribuidores oficiales autorizados (Bandai, Good Smile, Devir, Asmodee).</p>
+        </div>
+        <div class="faq-card">
+          <h4><i class="fas fa-truck"></i> ¿Cómo se realizan los envíos en Bolivia?</h4>
+          <p>Realizamos entregas presenciales y delivery express en La Paz y El Alto. Para el resto del país (Santa Cruz, Cochabamba, Sucre, Tarija, Oruro, Potosí, Beni, Pando) enviamos de forma segura mediante flota terrestre o courier certificado.</p>
+        </div>
+        <div class="faq-card">
+          <h4><i class="fas fa-money-bill-wave"></i> ¿Qué métodos de pago aceptan?</h4>
+          <p>Aceptamos pago fácil mediante QR Simple (Banco Unión, BCP, BNB, etc.), transferencias bancarias directas y pago en efectivo contra entrega para entregas coordinadas en La Paz.</p>
+        </div>
+        <div class="faq-card">
+          <h4><i class="fas fa-calendar-check"></i> ¿Cómo funcionan las Preventas?</h4>
+          <p>Puedes reservar figuras y juegos de próximo lanzamiento con un monto inicial (desde Bs. 50 a Bs. 100) y cancelar el saldo restante cuando el producto arribe a Bolivia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCT MODAL ================= -->
+  <div class="modal-backdrop" id="productModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal"><i class="fas fa-times"></i></button>
+      <div class="modal-layout">
+        
+        <!-- Gallery Side -->
+        <div class="modal-gallery-side">
+          <div class="modal-main-img-box">
+            <img src="" id="modalMainImg" alt="Producto">
+          </div>
+          <div class="modal-thumbnails" id="modalThumbs"></div>
+        </div>
+
+        <!-- Info Side -->
+        <div class="modal-info-side">
+          <span class="modal-category-tag" id="modalCategory">CATEGORÍA</span>
+          <h2 class="modal-product-title" id="modalTitle">Nombre del Producto</h2>
+          
+          <div class="modal-price-bar">
+            <span id="modalPrice">Bs. 0.00</span>
+            <small class="old-price" id="modalOldPrice" style="display:none;"></small>
+            <span class="modal-stock-badge" id="modalStockBadge"><i class="fas fa-check"></i> En Stock</span>
+          </div>
+
+          <!-- Specs Sheet -->
+          <div class="modal-specs-table">
+            <h4><i class="fas fa-info-circle"></i> Ficha Técnica</h4>
+            <div class="specs-grid" id="modalSpecsGrid"></div>
+          </div>
+
+          <p class="modal-description" id="modalDesc"></p>
+
+          <div class="modal-actions-row">
+            <div class="modal-qty-box">
+              <button class="qty-btn" id="modalQtyMinus" aria-label="Restar">-</button>
+              <input type="text" class="qty-input" id="modalQtyInput" value="1" readonly>
+              <button class="qty-btn" id="modalQtyPlus" aria-label="Sumar">+</button>
+            </div>
+            <button class="modal-btn-add" id="modalAddToCartBtn">
+              <i class="fas fa-cart-plus"></i> AGREGAR AL CARRITO
+            </button>
+            <button class="modal-btn-wa" id="modalWaBtn" title="Consultar disponibilidad por WhatsApp">
+              <i class="fab fa-whatsapp"></i> Consultar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SHOPPING CART DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Mi Carrito de Compras</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Cerrar carrito"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="cart-body">
+      <!-- Empty State -->
+      <div class="cart-empty-state" id="cartEmptyState">
+        <i class="fas fa-shopping-basket"></i>
+        <h4>Tu carrito está vacío</h4>
+        <p>Agrega figuras anime o juegos de mesa para comenzar tu pedido.</p>
+        <button class="btn-primary" onclick="document.getElementById('cartCloseBtn').click();">
+          Explorar Productos
+        </button>
+      </div>
+
+      <!-- Items List -->
+      <div id="cartItemsContainer"></div>
+    </div>
+
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total-row">
+        <span>Total del Pedido:</span>
+        <span id="cartTotalAmount">Bs. 0.00</span>
+      </div>
+
+      <!-- Customer Checkout Form -->
+      <div class="cart-customer-form">
+        <input type="text" id="clientName" class="cart-input" placeholder="Tu Nombre Completo *" required>
+        <input type="text" id="clientCity" class="cart-input" placeholder="Ciudad / Dirección (ej: La Paz, Miraflores)">
+        <select id="clientPayment" class="cart-input">
+          <option value="QR Simple">Pago por QR Simple (Recomendado)</option>
+          <option value="Transferencia Bancaria">Transferencia Bancaria</option>
+          <option value="Efectivo Contra Entrega">Pago en Efectivo (Solo La Paz)</option>
+        </select>
+      </div>
+
+      <button class="btn-checkout-wa" id="checkoutBtn">
+        <i class="fab fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <img src="img/logo.png" alt="Sebitas Toys Logo" class="footer-logo-img">
+        <p>Tu tienda especializada en figuras coleccionables de anime importadas de Japón y los mejores juegos de mesa originales en Bolivia.</p>
+        <div class="footer-social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/59178776168" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Categorías</h3>
+        <div class="footer-links">
+          <a href="anime.html"><i class="fas fa-chevron-right"></i> Figuras de Anime</a>
+          <a href="juegos.html"><i class="fas fa-chevron-right"></i> Juegos de Mesa</a>
+          <a href="index.html?cat=accesorios"><i class="fas fa-chevron-right"></i> Protectores & TCG</a>
+          <a href="preventas.html"><i class="fas fa-chevron-right"></i> Preventas Exclusivas</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Atención & Envíos</h3>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> <span>La Paz - Bolivia (Envíos a nivel nacional)</span></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/59178776168" target="_blank" rel="noopener">+591 78776168</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:contacto@sebitastoys.com.bo">contacto@sebitastoys.com.bo</a></li>
+          <li><i class="fas fa-clock"></i> <span>Lunes a Domingo: 09:00 - 21:00</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Garantía Sebitas</h3>
+        <p>Empaques blindados con plástico burbuja reforzado para que tus figuras y juegos lleguen en estado perfecto e impecable.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Sebitas Toys Bolivia. Todos los derechos reservados.</p>
+      <p>Anime Shop & Board Games Store | Desarrollado con excelencia.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/59178776168" target="_blank" rel="noopener" class="wa-float-btn" aria-label="Chatear con Sebitas Toys por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Subir arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
